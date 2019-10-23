@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="canbe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-11 09:45:15 &#214;S"/>
+        <attribute name="created" value="Y2FuYmU7REVTS1RPUC02QjlEVkNMOzIwMTktMTAtMTE7MDk6MDQ6MjMgw5ZTOzI5Nzk="/>
+        <attribute name="edited" value="Y2FuYmU7REVTS1RPUC02QjlEVkNMOzIwMTktMTAtMTE7MDk6NDU6MTUgw5ZTOzM7MzA5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, tahmin, sayac" type="Integer" array="False" size=""/>
+            <assign variable="say&#305;" expression="0"/>
+            <assign variable="say&#305;" expression="random(50)"/>
+            <assign variable="tahmin" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <output expression="say&#305;" newline="True"/>
+            <output expression="&quot;tahmini giriniz&quot;" newline="True"/>
+            <do expression="tahmin&gt;=0&amp;&amp;tahmin!=say&#305;&amp;&amp;sayac&lt;=5">
+                <input variable="tahmin"/>
+                <if expression="tahmin!=say&#305;">
+                    <then>
+                        <if expression="tahmin&lt;say&#305;&amp;&amp;tahmin&gt;=0">
+                            <then>
+                                <output expression="&quot;daha b&#252;y&#252;k de&#287;er gir&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;daha k&#252;&#231;&#252;k de&#287;er gir&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <assign variable="sayac" expression="sayac+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <if expression="tahmin&gt;=0&amp;&amp;sayac&lt;=5">
+                <then>
+                    <output expression="say&#305;&amp; &quot;say&#305;s&#305;n&#305;&quot; &amp;sayac&amp; &quot;. seferde bildin&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sayac&gt;=5">
+                        <then>
+                            <output expression="&quot;5 seferde bilemedin&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;negatif de&#287;er girdin game over&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
