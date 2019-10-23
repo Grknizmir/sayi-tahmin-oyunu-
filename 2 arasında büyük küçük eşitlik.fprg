@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="canbe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-11 09:27:35 &#214;S"/>
+        <attribute name="created" value="Y2FuYmU7REVTS1RPUC02QjlEVkNMOzIwMTktMTAtMTE7MDk6MDQ6MjMgw5ZTOzI5Nzk="/>
+        <attribute name="edited" value="Y2FuYmU7REVTS1RPUC02QjlEVkNMOzIwMTktMTAtMTE7MDk6Mjc6MzUgw5ZTOzE7MzA5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <output expression="&quot;a say&#305;n&#305;sn&#305; gir&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b say&#305;s&#305;n&#305; gir&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a=b">
+                <then>
+                    <output expression="&quot;a say&#305;s&#305; b says&#305;na e&#351;ittr&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a&lt;b">
+                        <then>
+                            <output expression="&quot;b say&#305;s&#305; a say&#305;s&#305;ndan b&#252;y&#252;kt&#252;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;a say&#305;s&#305; b say&#305;s&#305;ndan b&#252;y&#252;kt&#252;r&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

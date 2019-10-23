@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="canbe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 08:53:10 &#214;S"/>
+        <attribute name="created" value="Y2FuYmU7REVTS1RPUC02QjlEVkNMOzIwMTktMTAtMTU7MDg6MTE6MzEgw5ZTOzI5Nzk="/>
+        <attribute name="edited" value="Y2FuYmU7REVTS1RPUC02QjlEVkNMOzIwMTktMTAtMTU7MDg6NTM6MTAgw5ZTOzM7MzA5Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <declare name="tekToplam" type="Integer" array="False" size=""/>
+            <assign variable="tekToplam" expression="0"/>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <declare name="ortalama" type="Integer" array="False" size=""/>
+            <assign variable="ortalama" expression="0"/>
+            <do expression="sayi!=0">
+                <output expression="&quot;bir sayi giriniz&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi%2==1">
+                    <then>
+                        <output expression="&quot;sayi tektir&quot;" newline="True"/>
+                        <assign variable="tekToplam" expression="tekToplam+sayi"/>
+                        <assign variable="sayac" expression="sayac+1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;sayi &#231;ifttir&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+            <assign variable="ortalama" expression="tekToplam/sayac"/>
+            <output expression="ortalama&amp;&quot;tek sayilar&#305;n ortalamas&#305;d&#305;r&quot;" newline="True"/>
+            <output expression="tekToplam &amp; &quot;tek say&#305;lar&#305;n toplam&#305;d&#305;r&quot;" newline="True"/>
+            <output expression="sayac&amp;&quot;tane tek say&#305; girdiniz&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

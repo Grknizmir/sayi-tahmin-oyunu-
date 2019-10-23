@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="15"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-23 12:05:54 "/>
+        <attribute name="created" value="MTU7IFBDMTU7IDIwMTktMTAtMjM7IDEwOjU3OjMxIDsgMTU2OQ=="/>
+        <attribute name="edited" value="MTU7IFBDMTU7IDIwMTktMTAtMjM7IDEyOjA1OjU0IDsgMTU2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, n" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="n" expression="1"/>
+            <output expression="&quot;sayi giriniz&quot;"/>
+            <input variable="sayi"/>
+            <if expression="sayi&gt;0">
+                <then>
+                    <while expression="n*(n+1)/2!=sayi&amp;&amp;sayi&gt;n">
+                        <assign variable="n" expression="n+1"/>
+                    </while>
+                </then>
+                <else>
+                    <while expression="sayi&lt;0">
+                        <output expression="&quot;sayi negatif l&#252;tfen pozitif bir say&#305; giriniz&quot;"/>
+                        <input variable="sayi"/>
+                    </while>
+                    <while expression="n*(n+1)/2!=sayi&amp;&amp;sayi&gt;n">
+                        <assign variable="n" expression="n+1"/>
+                    </while>
+                </else>
+            </if>
+            <if expression="n*(n+1)/2==sayi&amp;&amp;sayi&gt;n">
+                <then>
+                    <output expression="&quot;sayiniz &#252;&#231;gen sayidir&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z &#252;&#231;gen say&#305; degildir&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

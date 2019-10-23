@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="canbe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-16 06:52:10 &#214;S"/>
+        <attribute name="created" value="Y2FuYmU7REVTS1RPUC02QjlEVkNMOzIwMTktMTAtMTY7MDY6NDY6MTYgw5ZTOzI5ODk="/>
+        <attribute name="edited" value="Y2FuYmU7REVTS1RPUC02QjlEVkNMOzIwMTktMTAtMTY7MDY6NTI6MTAgw5ZTOzI7MzA4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s&#305;cakl&#305;k" type="Integer" array="False" size=""/>
+            <assign variable="s&#305;cakl&#305;k" expression="0"/>
+            <output expression="&quot;s&#305;cakl&#305;k giriniz&quot;" newline="True"/>
+            <input variable="s&#305;cakl&#305;k"/>
+            <if expression="s&#305;cakl&#305;k&lt;0">
+                <then>
+                    <output expression="&quot;kat&#305;d&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="s&#305;cakl&#305;k&lt;100">
+                        <then>
+                            <output expression="&quot;s&#305;v&#305;d&#305;r&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;gazd&#305;r&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
