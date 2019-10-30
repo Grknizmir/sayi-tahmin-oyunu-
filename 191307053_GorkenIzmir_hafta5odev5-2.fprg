@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="15"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-30 11:56:46 "/>
+        <attribute name="created" value="MTU7IFBDMTU7IDIwMTktMTAtMzA7IDEwOjU5OjU0IDsgMTU3NA=="/>
+        <attribute name="edited" value="MTU7IFBDMTU7IDIwMTktMTAtMzA7IDExOjU2OjQ2IDsgMTU3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, kalan, toplam, uzunluk, geciciSayi, sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="kalan" expression="0"/>
+            <assign variable="uzunluk" expression="0"/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="sonuc" expression="0"/>
+            <output expression="&quot;sayi giriniz&quot;"/>
+            <input variable="sayi"/>
+            <assign variable="geciciSayi" expression="sayi"/>
+            <assign variable="uzunluk" expression="len(toString(sayi))"/>
+            <while expression="uzunluk&gt;5">
+                <output expression="&quot;daha az basamakl&#305; bir say&#305; giriniz&quot;"/>
+                <input variable="sayi"/>
+            </while>
+            <while expression="geciciSayi!=0">
+                <assign variable="kalan" expression="geciciSayi%10"/>
+                <assign variable="geciciSayi" expression="geciciSayi/10"/>
+                <assign variable="sonuc" expression="sonuc+(kalan^uzunluk)"/>
+            </while>
+            <if expression="sayi==sonuc">
+                <then>
+                    <output expression="&quot;say&#305;n&#305;z armstrong say&#305;d&#305;r&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot;say&#305;n&#305;z armstrong say&#305; de&#287;ildir&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
